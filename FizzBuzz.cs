@@ -8,15 +8,15 @@ namespace FizzBuzzGame
 {
     public class FizzBuzz
     {
-        public int number { get; set; }
-
         public string ShowResult(int number)
         {
-            if (number % 3 == 0)
-            {
-                return $"Fizz";
-            }
-            return $"test";
+            if (number % 3 == 0 && number % 5 == 0) return $"FizzBuzz";
+
+            else if (number % 5 == 0) return $"Buzz";
+            
+            else if (number % 3 == 0) return $"Fizz";
+
+            return $"Podana liczba: {number}";
         }
     }
 }
